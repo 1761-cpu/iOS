@@ -17,15 +17,18 @@ struct ContentView: View {
                 HStack(spacing: 16) {
                     ZStack {
                         Circle()
-                            .fill(Color.blue.opacity(0.5))
-                            .frame(width: 80, height: 80)
+                            .fill(
+                                AngularGradient(
+                                    colors: [.blue, .purple, .pink, .blue],
+                                    center: .center
+                                )
+                            )
+                            .frame(width: 84, height: 84)
                         
                         Image("ava")
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 70, height: 70)
-                            .clipShape(Circle())
-                            .padding(8)
+                            .frame(width: 72, height: 72)
                             .clipShape(Circle())
                             .accessibilityLabel("Profile picture of \(studentName)")
                    }
