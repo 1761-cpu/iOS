@@ -37,6 +37,7 @@ struct ProfileView: View {
     var gpa: Double = 2.0
     let isStudent: Bool = true
     let motto: String = "~Progress over perfection~"
+    let favoriteSubject: String = "Music"
 
     @State private var isPressed: Bool = false
     
@@ -85,6 +86,7 @@ struct ProfileView: View {
                             InfoRow(icon: "chart.bar.fill", title: "GPA", value: "\(gpa)", iconColor: .green, bgColor: Color.red.opacity(0.15))
                             InfoRow(icon: "checkmark.circle.fill", title: "Student", value: "\(isStudent)", iconColor: .green, valueColor: .green, bgColor: Color.green.opacity(0.15))
                         }
+                        InfoRow(icon: "heart.fill", title: "Favorite Subject", value: favoriteSubject, iconColor: .pink, bgColor: Color.pink.opacity(0.15))
                     }
                     
                     Button(action: {
