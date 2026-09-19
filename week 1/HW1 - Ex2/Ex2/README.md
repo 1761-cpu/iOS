@@ -43,3 +43,15 @@ I used `.clipShape(Circle())` on the avatar image to cut it into a perfect circl
 **5. What did you change or customize compared to the sample? Why?**
 
 I customized the design by adding a custom background image ("bg 2") and my own avatar ("ava") to make the app look more lively. I also gave each info row a different pastel background color (blue, yellow, red, green) instead of the plain gray sample, so each piece of information stands out more and the card looks more colorful. Additionally is a preferred motto line under my name to give the profile a personal touch.
+
+---
+
+## Updates After Initial Submission
+
+After the first version, I made some small improvements:
+
+1. **Favorite Subject row**: Added a new "Favorite Subject" info row below GPA and Student status, so the card shows more personal information.
+
+2. **Press animation for Edit Profile**: The "Edit Profile" button now changes color (blue → green) and scales down slightly when pressed, giving a small tactile feedback to the user.
+
+3. **Accessibility labels**: Added `.accessibilityLabel()` to all icons inside `InfoRow` and to the avatar image, so VoiceOver can describe them properly for users with visual impairments.
