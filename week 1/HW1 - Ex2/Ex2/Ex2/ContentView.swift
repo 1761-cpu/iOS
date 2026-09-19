@@ -37,6 +37,8 @@ struct ProfileView: View {
     var gpa: Double = 2.0
     let isStudent: Bool = true
     let motto: String = "~Progress over perfection~"
+
+    @State private var isPressed: Bool = false
     
     var body: some View {
         ZStack {
@@ -86,14 +88,18 @@ struct ProfileView: View {
                     }
                     
                     Button(action: {
+                        withAnimation(.easeInOut(duration: 0.15)) {
+                            isPressed.toggle()
+                        }
                     }) {
                         Text("Edit Profile")
                             .font(.system(size: 18, weight: .bold, design: .rounded))
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.blue.opacity(0.9))
+                            .background(isPressed ? Color.green.opacity(0.9) : Color.blue.opacity(0.9))
                             .cornerRadius(10)
+                            .scaleEffect(isPressed ? 0.97 : 1.0)
                     }
                     .padding(.top, 10)
                     
