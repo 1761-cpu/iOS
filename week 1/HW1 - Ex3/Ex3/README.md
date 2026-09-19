@@ -41,3 +41,12 @@ I used `.clipShape(Circle())` on the avatar image to make it perfectly round. Th
 
 I customized the design by adding a custom background image ("bg 2") and the user avatar ("ava") to make the app look more alive and personal, and changed to a rounded font design for some of the text, such as name and greeting, to have a friendlier and more modern look. The "My Tasks" title was placed into a blue box to make it stand out more since my background might make it hard to see plain text. I also replaced the motivational quotes with my chosen ones, aligning with my preferences.
 
+---
+
+## Updates After Initial Submission
+
+After the first version, I made a few small improvements to make the app more functional:
+
+1. **Empty state**: When there are no tasks, a message appears instead of a blank screen.
+2. **Swipe to delete**: Users can swipe a task to the left to delete it.
+3. **Category rotation**: New tasks now cycle through Study → Health → Work → Personal instead of always being "Personal".
