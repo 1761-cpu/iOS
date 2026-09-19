@@ -27,6 +27,7 @@ struct ContentView: View {
                             .clipShape(Circle())
                             .padding(8)
                             .clipShape(Circle())
+                            .accessibilityLabel("Profile picture of \(studentName)")
                    }
                     
                 VStack(alignment: .leading, spacing: 6) {
