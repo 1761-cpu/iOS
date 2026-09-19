@@ -179,19 +179,28 @@ struct TodayView: View {
                             TaskRow(task: task) {
                                 toggleTask(task)
                             }
+                            .swipeActions(edge: .trailing) {
+                                Button(role: .destructive) {
+                                    deleteTask(task)
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
+                            }
                         }
                     }
                     .padding(.horizontal, 16)
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 20)  
+                    }
                 }
-            }
-        }
-    }
     
     func toggleTask(_ task: Task) {
         if let index = tasks.firstIndex(where: { $0.id == task.id }) {
             tasks[index].isCompleted.toggle()
         }
+    }
+
+    func deleteTask(_ task: Task) {
+    tasks.removeAll { $0.id == task.id }
     }
 
     @State private var categoryIndex: Int = 0
