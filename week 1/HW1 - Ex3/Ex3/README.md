@@ -4,11 +4,11 @@ Hi Ms.Phượng, my name is **Võ Châu Anh**. This is my submission for HW1_Ex3
 
 This exercise asks to build a simple daily planner app using SwiftUI that will allow users to view their daily tasks, add new tasks, and mark tasks as completed. This app also contains a bottom tab bar with two extra tabs beside the main 'Today' one - Stats & Settings - for future features.
 
-### Screenshot
+### Screenshots
 For the screenshots, aside from the ones attached below, you can also find them in *'Assets.xcassets'*  too as I uploaded there directly from the simulator when finishing the code.
-![App Screenshot: Today Tab](<img width="1179" height="2556" alt="simulator_screenshot_28A5CD7D-6D63-4C9E-8F82-0EC8B285C564" src="https://github.com/user-attachments/assets/2f94e2ed-98d6-48c9-a3dc-a3d6ddde94fb" />)
-![App Screenshot: Stats Tab](<img width="1179" height="2556" alt="simulator_screenshot_036CCA00-A797-4635-86EA-92B9D68ED51A" src="https://github.com/user-attachments/assets/00049e59-9711-4790-8b24-26cb7ce7bfd7" />)
-![App Screenshot: Settings Tab](<img width="1179" height="2556" alt="simulator_screenshot_6384950F-699C-4975-821A-A53276FC9F66" src="https://github.com/user-attachments/assets/1ba22646-31bb-4efa-a253-3e2eff16323c" />)
+![App Screenshot: Today Tab](https://github.com/user-attachments/assets/2f94e2ed-98d6-48c9-a3dc-a3d6ddde94fb)
+![App Screenshot: Stats Tab](https://github.com/user-attachments/assets/00049e59-9711-4790-8b24-26cb7ce7bfd7)
+![App Screenshot: Settings Tab](https://github.com/user-attachments/assets/1ba22646-31bb-4efa-a253-3e2eff16323c)
 
 ---
 
