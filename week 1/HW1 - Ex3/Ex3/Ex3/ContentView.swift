@@ -174,22 +174,34 @@ struct TodayView: View {
                 .padding(.bottom, 8)
                 
                 ScrollView {
-                    VStack(spacing: 8) {
-                        ForEach(tasks) { task in
-                            TaskRow(task: task) {
-                                toggleTask(task)
-                            }
-                            .swipeActions(edge: .trailing) {
-                                Button(role: .destructive) {
-                                    deleteTask(task)
-                                } label: {
-                                    Label("Delete", systemImage: "trash")
+                    if tasks.isEmpty {
+                        VStack(spacing: 12) {
+                            Image(systemName: "checklist")
+                                .font(.system(size: 50))
+                                .foregroundColor(.gray.opacity(0.5))
+                            Text("No tasks yet. Add one!")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                        .padding(.top, 50)
+                        
+                    } else {
+                        VStack(spacing: 8) {
+                            ForEach(tasks) { task in
+                                TaskRow(task: task) {
+                                    toggleTask(task)
+                                }
+                                .swipeActions(edge: .trailing) {
+                                    Button(role: .destructive) {
+                                        deleteTask(task)
+                                    } label: {
+                                        Label("Delete", systemImage: "trash")
+                                    }
                                 }
                             }
                         }
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 20)  
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 20)   
                     }
                 }
     
