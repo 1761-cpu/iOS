@@ -193,12 +193,18 @@ struct TodayView: View {
             tasks[index].isCompleted.toggle()
         }
     }
-    
+
+    @State private var categoryIndex: Int = 0
+
     func addNewTask() {
         newTaskCount += 1
+        let categories = ["Study", "Health", "Work", "Personal"]
+        let currentCategory = categories[categoryIndex % categories.count]
+        categoryIndex += 1
+        
         let newTask = Task(
             title: "New Task #\(newTaskCount)",
-            category: "Personal",
+            category: currentCategory,
             isCompleted: false,
             time: "23:00"
         )
