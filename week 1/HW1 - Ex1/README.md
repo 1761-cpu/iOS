@@ -39,3 +39,15 @@ I used `.clipShape(Circle())` on the avatar image to cut it into a perfect circl
 **5. What did you change or customize compared to the sample? Why?**
 
 I customized the design by adding a custom background image ("bg 2") and my own avatar ("ava") to make the app look more of my own. I made the student ID italic to make it visually different from the name, and bolded the GPA value so it stands out more. My avatar bodered with a blue circular to give it a pop of color against the white card while matching the background aesthetic.
+
+---
+
+## Updates After Initial Submission
+
+After the first version uploaded directly from Xcode to here, I made some small improvements, mostly regarding the UI:
+
+1. **View Details button**: Added a "View Details" button at the bottom of the card. When pressed, it currently does nothing, but it makes the card feel more like a real profile screen and leaves room for future features.
+
+2. **Gradient avatar border**: I replaced the plain blue circle border around the avatar with an `AngularGradient` so that the avatar stands out more and, at the same time, gives the card a more modern look.
+
+3. **Accessibility labels**: The `.accessibilityLabel()` added to the avatar image so VoiceOver can describe them properly for users with visual impairments.
