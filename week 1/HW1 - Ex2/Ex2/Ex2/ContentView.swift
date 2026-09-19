@@ -57,6 +57,7 @@ struct ProfileView: View {
                     .shadow(radius: 5)
                     .zIndex(1)
                     .padding(.bottom, -55)
+                    .accessibilityLabel("Profile picture of \(studentName)")
                 
                 VStack(spacing: 20) {
                     
@@ -170,6 +171,7 @@ struct InfoRow: View {
             Image(systemName: icon)
                 .foregroundColor(iconColor)
                 .frame(width: 20)
+                .accessibilityLabel(title)
             
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
