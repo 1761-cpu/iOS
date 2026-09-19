@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    let studentName = "Võ Châu Anh"
-    let studentID = "SESEIU24001"
-    var age = 19
-    var gpa = 2.0
-    let isStudent = "true"
+    let studentName: String = "Võ Châu Anh"
+    let studentID: String = "SEIU24001"
+    var age: Int = 19
+    var gpa: Double = 2.0
+    let isStudent: Bool = true
 
     var body: some View {
         ZStack {
