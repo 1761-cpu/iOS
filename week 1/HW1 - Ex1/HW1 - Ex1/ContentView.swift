@@ -31,43 +31,53 @@ struct ContentView: View {
                             .frame(width: 72, height: 72)
                             .clipShape(Circle())
                             .accessibilityLabel("Profile picture of \(studentName)")
-                   }
+                    }
                     
-                VStack(alignment: .leading, spacing: 6) {
-                        HStack {
-                            Text(studentName)
-                                .font(.headline)
-                                .bold()
+                    VStack(alignment: .leading, spacing: 6) {
+                            HStack {
+                                Text(studentName)
+                                    .font(.headline)
+                                    .bold()
+                                
+                                Spacer()
+                                
+                                StatusBadge(text: isActive)
+                            }
                             
-                            Spacer()
-                            
-                            StatusBadge(text: isActive)
-                        }
-                        
-                        Text("Student ID: \(studentID)")
-                            .font(.subheadline)
-                            .italic()
-                            .foregroundColor(.gray)
-                        
-                        HStack(spacing: 4) {
-                            Image(systemName: "chart.bar.fill")
-                                .foregroundColor(.blue)
-                                .font(.caption)
-                            
-                            Text("GPA: \(gpa, specifier: "%.1f")")
+                            Text("Student ID: \(studentID)")
                                 .font(.subheadline)
-                                .bold()
+                                .italic()
                                 .foregroundColor(.gray)
+                            
+                            HStack(spacing: 4) {
+                                Image(systemName: "chart.bar.fill")
+                                    .foregroundColor(.blue)
+                                    .font(.caption)
+                                
+                                Text("GPA: \(gpa, specifier: "%.1f")")
+                                    .font(.subheadline)
+                                    .bold()
+                                    .foregroundColor(.gray)
+                            }
                         }
                     }
+                    Button(action: {}) {
+                        Text("View Details")
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                            .background(Color.blue.opacity(0.9))
+                            .cornerRadius(12)
+                    }
+                    .padding(.top, 5)
                 }
-            }
-            .padding(20)
-            .background(Color.white.opacity(0.9))
-            .cornerRadius(20)
-            .shadow(radius: 10)
-            .padding(18)
-        }
+                .padding(20)
+                .background(Color.white.opacity(0.9))
+                .cornerRadius(20)
+                .shadow(radius: 10)
+                .padding(18)
+       }
     }
 }
 
