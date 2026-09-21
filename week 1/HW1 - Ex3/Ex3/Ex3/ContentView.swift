@@ -42,9 +42,9 @@ struct TodayView: View {
         Task(title: "Update music storage", category: "Personal", isCompleted: false, time: "22:00")
     ]
     
-    // Biến đếm để tạo task mới với tiêu đề khác nhau
     @State private var newTaskCount: Int = 1
-    
+    @State private var categoryIndex: Int = 0 
+
     var body: some View {
         ZStack {
             Image("bg 2")
@@ -204,6 +204,9 @@ struct TodayView: View {
                         .padding(.bottom, 20)   
                     }
                 }
+            }   
+        }     
+    }
     
     func toggleTask(_ task: Task) {
         if let index = tasks.firstIndex(where: { $0.id == task.id }) {
@@ -214,8 +217,6 @@ struct TodayView: View {
     func deleteTask(_ task: Task) {
     tasks.removeAll { $0.id == task.id }
     }
-
-    @State private var categoryIndex: Int = 0
 
     func addNewTask() {
         newTaskCount += 1
