@@ -19,7 +19,7 @@ struct ContentView: View {
                         Circle()
                             .fill(
                                 AngularGradient(
-                                    colors: [.blue, .purple, .pink, .blue],
+                                    colors: [.blue, .purple, .indigo, .blue],
                                     center: .center
                                 )
                             )
