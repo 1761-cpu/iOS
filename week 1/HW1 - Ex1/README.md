@@ -51,3 +51,4 @@ After the first version uploaded directly from Xcode to here, I made some small 
 2. **Gradient avatar border**: I replaced the plain blue circle border around the avatar with an `AngularGradient` so that the avatar stands out more and, at the same time, gives the card a more modern look.
 
 3. **Accessibility labels**: The `.accessibilityLabel()` added to the avatar image so VoiceOver can describe them properly for users with visual impairments.
+![App Screenshot: Student Card_Updating](<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 Pro - 2026-09-21 at 08 34 31" src="https://github.com/user-attachments/assets/13af8623-edff-4646-8135-2ebfe1c35567" />)
