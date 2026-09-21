@@ -55,3 +55,6 @@ After the first version, I made some small improvements:
 2. **Press animation for Edit Profile**: The "Edit Profile" button now changes color (blue → green) and scales down slightly when pressed, giving a small tactile feedback to the user.
 
 3. **Accessibility labels**: Added `.accessibilityLabel()` to all icons inside `InfoRow` and to the avatar image, so VoiceOver can describe them properly for users with visual impairments.
+
+![App Screenshot: Profile Tab_update1](<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 Pro - 2026-09-21 at 08 38 54" src="https://github.com/user-attachments/assets/1413d9ca-9619-4d6d-990e-c32b548fa3cc" />)
+![App Screenshot: Profile Tab_update2](<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 Pro - 2026-09-21 at 08 39 34" src="https://github.com/user-attachments/assets/7370a3dc-2ed0-4039-811c-1743e8d71590" />)
